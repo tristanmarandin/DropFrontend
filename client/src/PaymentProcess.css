@@ -1,0 +1,90 @@
+.payment-confirmation-container {
+  display: flex;
+  align-items: center; /* This will vertically center the child */
+  justify-content: center; /* This will horizontally center the child */
+  height: 100vh; /* Full viewport height */
+}
+
+.payment-confirmation {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: #fff;
+  /* Remove margin auto since the parent is now centering */
+}
+
+  .payment-confirmation-content {
+    /* Adjust width as necessary to control space distribution */
+    flex-basis: 60%; 
+  }
+  
+  .payment-confirmation-image {
+    /* Adjust width as necessary to control space distribution */
+    flex-basis: 40%;
+  }
+  
+  .payment-confirmation-header h2 {
+    color: #4CAF50;
+  }
+
+
+  .payment-confirmation-actions {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+  }
+    
+  
+  .payment-confirmation-actions button {
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button-try-again {
+    background-color: green; /* Original color */
+    color: white;
+  }
+
+  .button-try-again:hover {
+    background-color: rgb(1, 90, 1);
+    color: white;
+  }
+  
+  .button-back-home {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .button-back-home:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  .payment-confirmation-image img {
+    width: 100%; /* This will make the image responsive */
+    max-width: 400px; /* Adjust the max-width as needed */
+    height: auto;
+  }
+  
+  /* If you need to stack them on smaller screens */
+  @media (max-width: 768px) {
+    .payment-confirmation {
+      flex-direction: column;
+    }
+    
+    .payment-confirmation-content,
+    .payment-confirmation-image {
+      flex-basis: auto;
+    }
+  }

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.user-section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 1rem;
+    margin: auto; /* Additional rule for centering */
+    position: absolute; /* Position absolutely */
+    left: 50%; /* Position in the middle */
+    top: 50%; /* Position in the middle */
+    transform: translate(-50%, -50%); /* Adjust for the exact center */
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: adds some depth */
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.user-input,
+.user-textarea {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.user-label {
+    color: #fff; /* Change the label color to white */
+    margin-top: 1rem;
+}
+
+.user-button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none; /* Remove the default border */
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.user-button:not(:disabled):hover {
+    background-color: #808080; /* Grey background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.user-instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.user-instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.user-offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.user-hide {
+    display: none;
+}
+
+.user-valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.user-invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.user-errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-line {
+    display: inline-block;
+}
+
+.user-registered,
+.user-account-query {
+    color: #fff; /* Adjust as needed */
+    text-align: center;
+    width: 100%;
+    display: block; 
+    margin-top: 1rem;
+}
+
+.user-nav-link-container {
+text-align: center;
+width: 100%;
+display: block; 
+margin-top: 1rem;
+}
+
+.user-nav-link,
+.user-nav-link:visited {
+    color: #fff;
+}
+
+.user-title,
+.user-success {
+    color: #fff; /* Adjust as needed */
+}
